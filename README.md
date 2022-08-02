@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+## TicTacToe
+A classic Tic-Tac-Toe game, built using ReactJS according to the tutorial on the React.js official website. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Properties
+* A react-select component which displays several modes of difficulty - easy, medium, hard and 2-player. The first three modes are set up as 'Human vs AI' and run on the 'Minimax' algorithm.  By default, the game is set up on the 'easy' mode.
+* A game board which displays the markers as the game progresses
+* A button with which the player can restart the game
+* A list of moves that the human makes (in the case of 'Human vs AI') or both players make (2-player version) during the game. Each move is displayed as a button and asscoiated with a state of the board. The players can click on a move to time-travel back to its corresponding state of the game. 
+* A toggle button that sorts the move list in either ascending or descending order.
 
-## Available Scripts
+# What I learnt
+While coding the time-travel portion of the game, I became more familiar with the states of a React component and what happens behind the scenes when we call setState(). My basic understanding of React element rendering and event handling improved as well. 
 
-In the project directory, you can run:
+I also learnt about the top-down approach and its benefits as I passed event handlers and states in the Game component as props for its children. In addition, I got to practice using SOLID principles, especially single-responsibility and task-delegation principles, when I was writing the modules for the AI aspect of the game. 
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Future updates
+I plan on incorporating SVG animations for the board and using hooks to delay a marker's display. It will make the game more dynamic and attractive. 
