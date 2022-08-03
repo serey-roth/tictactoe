@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/serey-roth/tictactoe/static/css/main.cb660510.css",
-    "main.js": "/serey-roth/tictactoe/static/js/main.5a2102ec.js",
-    "index.html": "/serey-roth/tictactoe/index.html",
-    "main.cb660510.css.map": "/serey-roth/tictactoe/static/css/main.cb660510.css.map",
-    "main.5a2102ec.js.map": "/serey-roth/tictactoe/static/js/main.5a2102ec.js.map"
+    "main.css": "/tictactoe/static/css/main.cb660510.css",
+    "main.js": "/tictactoe/static/js/main.5a2102ec.js",
+    "index.html": "/tictactoe/index.html",
+    "main.cb660510.css.map": "/tictactoe/static/css/main.cb660510.css.map",
+    "main.5a2102ec.js.map": "/tictactoe/static/js/main.5a2102ec.js.map"
   },
   "entrypoints": [
     "static/css/main.cb660510.css",
