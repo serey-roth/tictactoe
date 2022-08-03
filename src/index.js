@@ -205,35 +205,41 @@ class Game extends React.Component {
         }
 
         return (
-            <div className="game">
-                <div className="game-board">
-                    <GameSelect 
-                        value={this.state.gameMode}
-                        className="game-modes" 
-                        onChange={this.handleChangeGameMode}
-                    />
-                    <Board
-                        squares={current.squares}
-                        winnerSquares={winner}
-                        onClick={this.handleClick}
-                    />
-                    <button
-                        id="restartBtn"
-                        onClick={this.reset.bind(this, 0)}>
-                        Restart Game
-                    </button>
-                </div>
-                <div className="game-info">
-                    <div className="status">{status}</div>
-                    <p>Moves:</p>
-                    <div className="game-moves">
-                        <ol className="move-list">{moves}</ol>
+            <div className="container">
+                <div className="game">
+                    <div className="game-board">
+                        <GameSelect 
+                            value={this.state.gameMode}
+                            className="game-modes" 
+                            onChange={this.handleChangeGameMode}
+                        />
+                        <Board
+                            squares={current.squares}
+                            winnerSquares={winner}
+                            onClick={this.handleClick}
+                        />
                         <button
-                            id="sortMovesToggleBtn"
-                            onClick={this.handleSortToggle}>
-                            <FontAwesomeIcon icon={faSort}/>
-                    </button>
+                            id="restartBtn"
+                            onClick={this.reset.bind(this, 0)}>
+                            Restart Game
+                        </button>
                     </div>
+                    <div className="game-info">
+                        <div className="status">{status}</div>
+                        <p>Moves:</p>
+                        <div className="game-moves">
+                            <ol className="move-list">{moves}</ol>
+                            <button
+                                id="sortMovesToggleBtn"
+                                onClick={this.handleSortToggle}>
+                                <FontAwesomeIcon icon={faSort}/>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="footer">
+                    Copyright &copy; 2022 Serey Roth
+                    <a href="https://github.com/serey-roth/tictactoe">Source</a>
                 </div>
             </div>
         );
