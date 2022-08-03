@@ -206,6 +206,9 @@ class Game extends React.Component {
 
         return (
             <div className="container">
+                <div className="header">
+                    <h1>tic.tac.toe</h1>
+                </div>            
                 <div className="game">
                     <div className="game-board">
                         <GameSelect 
@@ -239,7 +242,8 @@ class Game extends React.Component {
                 </div>
                 <div className="footer">
                     Copyright &copy; 2022 Serey Roth
-                    <a href="https://github.com/serey-roth/tictactoe">Source</a>
+                    <a target="_blank" href="https://github.com/serey-roth/tictactoe" 
+                    rel="noreferrer">Source</a>
                 </div>
             </div>
         );
