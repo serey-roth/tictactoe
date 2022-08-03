@@ -8,7 +8,6 @@
 
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    min-height: 100vh;
 }
 
 button {
@@ -18,6 +17,11 @@ button {
 ol,
 ul {
     padding-left: 20px;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
 }
 
 .game {
@@ -168,4 +172,25 @@ ul {
         font-size: smaller;
         width: 125px;
     }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer a {
+    margin-left: 10px;
+    color: #999;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.footer a:hover {
+    color: white;
 }
