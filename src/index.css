@@ -25,6 +25,7 @@ ul {
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    height: 360px;
     justify-content: center;
     position: absolute;
     top: 50%;

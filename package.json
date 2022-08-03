@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --branch 'gh-pages"
+    "deploy": "gh-pages -d build --branch 'gh-pages'"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +48,5 @@
     "url": "https://github.com/serey-roth/tictactoe"
   },
   "license": "ISC",
-  "homepage": "https://github.com/serey-roth/tictactoe"
+  "homepage": "https://serey-roth.github.io/tictactoe/"
 }

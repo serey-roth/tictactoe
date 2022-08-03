@@ -87,10 +87,9 @@ class Game extends React.Component {
         this.handleClick = this.handleClick.bind(this);
         this.handleSortToggle = this.handleSortToggle.bind(this);
         this.handleChangeGameMode = this.handleChangeGameMode.bind(this);
-        this.reset = this.reset.bind(this);
     }
 
-    reset(gameMode=0) {
+    reset(modeValue) {
         this.setState({
             history: [{
                 squares: Array(9).fill(null),
@@ -99,8 +98,8 @@ class Game extends React.Component {
             xIsNext: true,
             stepNumber: 0,
             isAscending: true,
-            gameMode: gameMode,
-            ai: gameMode !== 3,
+            gameMode: modeValue,
+            ai: modeValue !== 3,
         });
     }
 
@@ -220,7 +219,7 @@ class Game extends React.Component {
                     />
                     <button
                         id="restartBtn"
-                        onClick={this.reset}>
+                        onClick={this.reset.bind(this, 0)}>
                         Restart Game
                     </button>
                 </div>
